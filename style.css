@@ -98,6 +98,7 @@ body {
 }
 
 .flex--between {
+  color: #81AFDD;
   display: flex;
   justify-content: space-between;
 }
@@ -130,15 +131,18 @@ body {
 
 /* text styles */
 .h1 {
+  color: #FF8A71;
   font-weight: bold;
   font-size: var(--fs-600);
   line-height: 1.1;
 }
 
 p {
+  color: white;
   max-width: 60ch;
   line-height: 2;
 }
+.
 
 small {
   font-size: var(--fs-200);
@@ -150,7 +154,7 @@ small {
 
 /* btn styling */
 .btn {
-  background-color: hsl(var(--text));
+  background-color: orangered;
   color: hsl(var(--bkg));
   padding: var(--space--md);
   width: 100%;
@@ -185,7 +189,7 @@ input {
   border-radius: var(--round--sm);
   border: 1px solid hsl(var(--muted));
   width: 100%;
-  color: hsl(var(--text));
+  color: white;
   transition: background-color 200ms var(--ease-elastic),
     box-shadow 200ms var(--ease-elastic);
     z-index: 999;
@@ -238,9 +242,11 @@ input.error {
 .wrapper {
   background-color: hsl(var(--bkg));
   min-height: 100vh;
+  background-color: #040C18;
 }
 
 .card {
+  background-color: #040C18;
   display: flex;
   flex-wrap: wrap-reverse;
 }
