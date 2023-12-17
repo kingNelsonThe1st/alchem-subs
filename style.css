@@ -224,7 +224,7 @@ input.error {
   width: 100%;
   height: 100%;
   opacity: 0.2;
-  background-image: url('/public/jk.png');
+  background-image: url('public/jk.png');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
