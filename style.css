@@ -159,6 +159,7 @@ small {
   font-weight: bold;
   transition: background-color 200ms var(--ease-elastic),
     box-shadow 200ms var(--ease-elastic);
+    z-index: 999;
 }
 
 .btn:hover {
@@ -187,6 +188,7 @@ input {
   color: hsl(var(--text));
   transition: background-color 200ms var(--ease-elastic),
     box-shadow 200ms var(--ease-elastic);
+    z-index: 999;
 }
 
 input::placeholder {
@@ -222,7 +224,7 @@ input.error {
   width: 100%;
   height: 100%;
   opacity: 0.2;
-  background-image: url('./public/jk.png');
+  background-image: url('/public/jk.png');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
