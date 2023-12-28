@@ -58,6 +58,7 @@
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="icon--sm"
+                  color="blue"
                   width="21"
                   height="21"
                   viewBox="0 0 21 21"
@@ -78,7 +79,8 @@
               <div class="grid--xs">
                 <div class="flex--between items-center">
                   <label for="email"><small>Email address</small></label>
-                  <p class="error-message hidden">
+                  <p class= 
+                  "error-message hidden">
                     <small>Valid email required</small>
                   </p>
                 </div>
@@ -106,6 +108,41 @@
           />
         </div>
       </div>
+
+      <div class="wrapper hidden" id="successor">
+        <div class="content grid--md">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="64"
+            height="64"
+            viewBox="0 0 64 64"
+            class="icon--lg"
+          >
+            <defs>
+              <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+                <stop offset="0%" stop-color="#FF6A3A" />
+                <stop offset="100%" stop-color="#FF527B" />
+              </linearGradient>
+            </defs>
+            <g fill="none">
+              <circle cx="32" cy="32" r="32" fill="url(#a)" />
+              <path
+                stroke="#FFF"
+                stroke-width="4"
+                d="m18.286 34.686 8.334 7.98 19.094-18.285"
+              />
+            </g>
+          </svg>
+          <p>
+            A confirmation email has been sent to
+            <strong id="submitted-email"></strong>. Please open it and click the
+            button inside to confirm your subscription.
+          </p>
+  
+          <button class="btn" id="dismiss">Dismiss message</button>
+        </div>
+      </div>
+
       <div id="success" class="wrapper hidden">
         <div class="content grid--md">
           <svg
@@ -130,13 +167,22 @@
               />
             </g>
           </svg>
-          <h1 class="h1">Thanks for subscribing!</h1>
-          <p>
-            A confirmation email has been sent to
-            <strong id="submitted-email"></strong>. Please open it and click the
-            button inside to confirm your subscription.
-          </p>
-          <button class="btn" id="dismiss">Dismiss message</button>
+          <h1 class="h1 w">Your on the Waitlist!</h1>
+          <p>Your current position is <span>#3548</span></p>
+          <h4>Want to cut the line and get early access?</h4>
+          <h6>Follow, Like and retweet our pinned post on X. Join our telegram channel</h6>
+          <div class="socials">
+            <p class="tweet">
+              <img class="asa" src="public/twitter-3-logo-svgrepo-com.svg" alt="">
+              <span>Twitter</span>
+            </p>
+            <p class="gram">
+              <img class="asa" src="public/telegram-logo-svgrepo-com.svg" alt="">
+              <span>Telegram</span>
+            </p>
+          </div>
+          
+          <button class="btn" id="next">Done!</button>
         </div>
       </div>
     </main>

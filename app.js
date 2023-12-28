@@ -2,11 +2,18 @@ const form = document.querySelector("#newsletter-form");
 const submittedEmail = document.querySelector("#submitted-email");
 const signup = document.querySelector("#signup");
 const success = document.querySelector("#success");
+const successor = document.querySelector("#successor")
 const dismiss = document.querySelector("#dismiss");
+const next = document.querySelector("#next")
 
 function updateSuccessMessage(email) {
   // update the strong tag with email
   submittedEmail.textContent = email;
+}
+
+function switchSection() {
+  success.classList.toggle("hidden");
+  successor.classList.toggle("hidden");
 }
 
 function switchSections() {
@@ -26,6 +33,10 @@ function showErrors() {
   input.classList.add("error");
 }
 
+next.addEventListener("click", () => {
+  switchSection();
+})
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const email = form.querySelector("#email");
@@ -43,3 +54,9 @@ dismiss.addEventListener("click", () => {
   switchSections();
   updateSuccessMessage("");
 });
+
+/* <p>
+            A confirmation email has been sent to
+            <strong id="submitted-email"></strong>. Please open it and click the
+            button inside to confirm your subscription.
+          </p> */
