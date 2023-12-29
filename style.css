@@ -150,11 +150,12 @@ p {
   display: flex;
 }
 
-.gram span, .tweet span {
+.gram a, .tweet a {
   font-size: 16px;
   color: aliceblue;
   font-weight: bolder;
   padding-left: 10px;
+  text-decoration: none;
 }
 
 .asa {
